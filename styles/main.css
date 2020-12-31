@@ -1,7 +1,6 @@
 body {
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
 }
 
 header {
@@ -27,22 +26,25 @@ header {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 0px;
-    margin-top: 0px;
-    margin-bottom: 13px;
+    text-transform: uppercase;
+    padding-inline-start: 0px;
 }
 
 .li-1 {
-    margin-right: 10px;
+    padding: 0px 10px 13px 10px;
 }
 
 .li-2 {
-    margin-left: 10px;
+    padding: 0px 10px 13px 10px;
+} 
+
+li a {
+    text-decoration: none;
+    color: #4a4a4a;
 }
 
 .main {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,15 +57,15 @@ header {
 .text {
     display: block;
     text-align: center;
-    font-family: 'Rubik', sans-serif;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 30px;
+    text-transform: capitalize;
 }
 
 @media all and (min-width: 768px) {
+
     header {
-        display: flex;
         flex-direction: row;
         justify-content: space-between; 
         margin-top: 20px;
